@@ -7,9 +7,11 @@
     <meta name="author" content="Mateusz Michalak">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
     <title>Portfolio · Mateusz Michalak</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/1.0.2/css/froala_blocks.min.css">
+	  <link href="/css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="/css/album.css" rel="stylesheet">
@@ -28,17 +30,48 @@
 
     <main role="main">
 
-      <section class="jumbotron text-center">
+      <section class="jumbotron text-center py-5">
         <div class="container">
           <h1 class="jumbotron-heading">Hi, I'm Matt. I design and build websites.</h1>
 			<p class="lead text-muted mt-5">Freelance Web Designer &amp; Developer based in Hanoi, Vietnam. Experienced in designing and developing custom Wordpress websites. </p>
           <p>
             <a href="#contact" class="btn btn-primary my-2">Contact me</a>
+            <a href="#projects" class="btn btn-secondary my-2">Projects</a>
           </p>
         </div>
       </section>
+      
+	  <section class="fdb-block fp-active bg-light pt-2" data-block-type="features" data-id="1" draggable="true">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-12">
+						<h2 class="display-4">Why choose me?</h2>
+					</div>
+				</div>
 
-      <div class="album py-5 bg-light">
+				<div class="row text-center justify-content-center mt-5">
+					<div class="col-12 col-sm-6 col-xl-3 m-md-auto">
+						<i class="fas fa-mobile-alt fa-4x mb-3"></i>
+						<h3><strong>All-device friendly</strong></h3>
+						<p>Your website will work on every screen size. And it will look good.</p>
+					</div>
+
+					<div class="col-12 col-sm-6 col-xl-3 m-auto pt-4 pt-sm-0">
+						<i class="fab fa-wordpress-simple fa-4x mb-3"></i>
+						<h3><strong>Wordpress</strong></h3>
+						<p>Your website can have as many features as you want. And with the help of Wordpress it will be simple to add and manage your content.</p>
+					</div>
+
+					<div class="col-12 col-sm-6 col-xl-3 m-auto pt-4 pt-sm-0">
+						<i class="fas fa-headset fa-4x mb-3"></i>
+						<h3><strong>Customer support</strong></h3>
+						<p>You will get frequent status updates while we're creating your website and continuous support.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+      <div id="projects" class="album py-1 bg-light">
         <div class="container">
 		  <h1 class="jumbotron-heading mb-5">My projects:</h1>
 
@@ -80,9 +113,9 @@
 
     </main>
 
-    <footer class="text-muted">
+    <footer id="contact" class="text-muted">
       <div class="container">
-     	  <h4 id="contact">Contact details:</h4>
+     	  <h4>Contact details:</h4>
      	  <p>Email: michalakweb@gmail.com</p>
      	  <br>
 		  <p>Copyright © 2018 Mateusz Michalak • Freelance Web Designer &amp; Developer</p>
