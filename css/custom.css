@@ -5,3 +5,7 @@
 .nav-link-active:hover {
 	text-decoration: none;
 }
+
+#welcome {
+	background-image: url(../img/background.jpeg);
+}
