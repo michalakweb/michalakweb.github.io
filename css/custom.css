@@ -9,3 +9,7 @@
 #welcome {
 	background-image: url(../img/background.jpeg);
 }
+
+#stack img{
+	max-width: 64px;
+}
