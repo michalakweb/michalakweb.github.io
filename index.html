@@ -47,19 +47,26 @@
       <section id="welcome" class="jumbotron text-center py-5">
         <div class="container">
           <h1 class="jumbotron-heading">Hi, I'm Matt. I design and build websites.</h1>
-			<p class="lead font-weight-light mt-5">Freelance Web Designer &amp; Developer. Experienced in designing and developing custom Wordpress websites. </p>
+					<p class="lead font-weight-light mt-5">Freelance Web Designer &amp; Developer. 
+							Experienced in designing and developing custom Wordpress websites. 
+							Currently looking for a full-time job in Berlin.
+					</p>
           <p>
             <a href="#contact" class="btn btn-primary my-2">Contact me</a>
             <a href="#projects" class="btn btn-secondary my-2">Projects</a>
+            <a href="#reactProjects" class="btn btn-outline-info my-2">
+							<i class="fab fa-react fa-spin"></i>
+							Projects
+						</a>
           </p>
         </div>
       </section>
       
 	  <section class="fdb-block fp-active pt-2" data-block-type="features" data-id="1" draggable="true">
-			<div class="container">
+			<div class="container mb-5">
 				<div class="row text-center">
 					<div class="col-12">
-						<h2 class="display-4">Why choose me?</h2>
+						<h2 class="display-4">Why hire me?</h2>
 					</div>
 				</div>
 
@@ -83,26 +90,71 @@
 					</div>
 				</div>
 			</div>
+			<!-- Video section -->
+			<div class="container">
+					<div class="row text-center">
+						<div class="col-md-6 mb-5">
+							<h2 class="display-4">Video-CV</h2>
+							<div class="row text-center justify-content-center mt-5">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/kSYSw6h1WEA" 
+									frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+									allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="col-md-6">
+								<h2 class="display-4">Find me on PPH</h2>
+									<!--
+											PeoplePerHour Profile Widget
+											The div#pph-hire me is the element
+											where the iframe will be inserted.
+											You may move this element wherever
+											you need to display the widget
+									-->
+									<div id="pph-hireme" class="mt-5"></div>
+									<script type="text/javascript">
+									(function(d, s) {
+											var useSSL = 'https:' == document.location.protocol;
+											var js, where = d.getElementsByTagName(s)[0],
+											js = d.createElement(s);
+											js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1377666131/2387822.js?width=300&height=255&orientation=vertical&theme=dark&hourlies=487184&rnd='+parseInt(Math.random()*10000, 10);
+											try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+									}(document, 'script'));
+									</script>
+							</div>
+					</div>
+	
+					
+				</div>
 		</section>
 
       <div id="projects" class="album py-1 bg-light">
         <div class="container">
-		  <h1 class="jumbotron-heading mb-5 mt-3">My projects:</h1>
+			<h1 class="jumbotron-heading mb-5 mt-3">My projects:</h1>
+			
+			
 
-			<div class="row d-flex justify-content-center">
+			<div class="row d-flex">
 			 <div class="col-md-4">
 				  <div class="card mb-4 shadow-sm">
 					  <img class="card-img-top" src="img/kurka.jpg" alt="Card image cap">
 					  <div class="card-body">
 						  <p class="card-text">A complete redesign of an old culinary blog. It has been migrated from the Blogger platform and successfully integrated with Wordpress.</p>
+							
+								<a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+										Key Features
+								</a>
+								</p>
+								<div class="collapse" id="collapse1">
+									<div class="card card-body">
+											<ul class="list-group list-group-flush">  
+													<li class="list-group-item">live-search powered by REST and Javascript</li>
+													<li class="list-group-item">designed with the "mobile first" principle in mind</li>
+													<li class="list-group-item">custom social website functionality (eg. like button for a post) powered by Javascript and Advanced Custom Fields</li>
+													<li class="list-group-item">Webpack modular setting of the JS files</li>
+											</ul>
+									</div>
+								</div>
 						  
-						  <p><strong>Key features:</strong></p>
-						  <ul>  
-						  	<li>live-search powered by REST and Javascript</li>
-						  	<li>designed with the "mobile first" principle in mind</li>
-						  	<li>custom social website functionality (eg. like button for a post) powered by Javascript and Advanced Custom Fields</li>
-						  	<li>Webpack modular setting of the JS files</li>
-						  </ul>
 						  <a href="http://okurka.net/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block">Link</a>
 					  </div>
 				  </div>
@@ -112,15 +164,23 @@
 					  <img class="card-img-top" src="img/university.png" alt="Card image cap">
 					  <div class="card-body">
 						  <p class="card-text">A fictional university website and a proof of concept. Created with Wordpress, Webpack, jQuery and a few other technologies.  </p>
+							
+							<a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+									Key Features
+							</a>
+							</p>
+							<div class="collapse" id="collapse2">
+								<div class="card card-body">
+										<ul class="list-group list-group-flush">  
+												<li class="list-group-item">live-search powered by REST</li>
+												<li class="list-group-item">simple CRUD operations provided for the registered user (eg. user private notes)</li>
+												<li class="list-group-item">related data to provide the best user experience (powered by Advanced Custom Fields</li>
+												<li class="list-group-item">modular CSS file structure thanks to Sass</li>
+												<li class="list-group-item">all-device responsive</li>
+										</ul>
+								</div>
+							</div>
 						  
-						  <p><strong>Key features:</strong></p>
-						  <ul>  
-							  <li>live-search powered by REST</li>
-							  <li>simple CRUD operations provided for the registered user (eg. user private notes)</li>
-							  <li>related data to provide the best user experience (powered by Advanced Custom Fields</li>
-							  <li>modular CSS file structure thanks to Sass</li>
-							  <li>all-device responsive</li>
-						  </ul>
 						  <a href="https://michalakweb.000webhostapp.com/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block">Link</a>
 					  </div>
 				  </div>
@@ -155,11 +215,64 @@
 					</div>
 				</div>
             </div>
+					</div>
 
-          
-            
-         
-          </div>
+					<h1 id='reactProjects' class="jumbotron-heading mb-5 mt-3"><i class="fab fa-react"></i> Projects:</h1>
+					
+					<div class="row d-flex">
+							<div class="col-md-4">
+								 <div class="card mb-4 shadow-sm">
+									 <img class="card-img-top" src="img/kurka.jpg" alt="Card image cap">
+									 <div class="card-body">
+										 <p class="card-text">A complete redesign of an old culinary blog. It has been migrated from the Blogger platform and successfully integrated with Wordpress.</p>
+										 
+											 <a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+													 Key Features
+											 </a>
+											 </p>
+											 <div class="collapse" id="collapse1">
+												 <div class="card card-body">
+														 <ul class="list-group list-group-flush">  
+																 <li class="list-group-item">live-search powered by REST and Javascript</li>
+																 <li class="list-group-item">designed with the "mobile first" principle in mind</li>
+																 <li class="list-group-item">custom social website functionality (eg. like button for a post) powered by Javascript and Advanced Custom Fields</li>
+																 <li class="list-group-item">Webpack modular setting of the JS files</li>
+														 </ul>
+												 </div>
+											 </div>
+										 
+										 <a href="http://okurka.net/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block">Link</a>
+									 </div>
+								 </div>
+							</div>
+						 <div class="col-md-4">
+								 <div class="card mb-4 shadow-sm">
+									 <img class="card-img-top" src="img/university.png" alt="Card image cap">
+									 <div class="card-body">
+										 <p class="card-text">A fictional university website and a proof of concept. Created with Wordpress, Webpack, jQuery and a few other technologies.  </p>
+										 
+										 <a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+												 Key Features
+										 </a>
+										 </p>
+										 <div class="collapse" id="collapse2">
+											 <div class="card card-body">
+													 <ul class="list-group list-group-flush">  
+															 <li class="list-group-item">live-search powered by REST</li>
+															 <li class="list-group-item">simple CRUD operations provided for the registered user (eg. user private notes)</li>
+															 <li class="list-group-item">related data to provide the best user experience (powered by Advanced Custom Fields</li>
+															 <li class="list-group-item">modular CSS file structure thanks to Sass</li>
+															 <li class="list-group-item">all-device responsive</li>
+													 </ul>
+											 </div>
+										 </div>
+										 
+										 <a href="https://michalakweb.000webhostapp.com/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block">Link</a>
+									 </div>
+								 </div>
+						 </div>
+								
+								 </div>
         </div>
       </div>
 
@@ -179,20 +292,7 @@
 					<p>Copyright © 2018 Mateusz Michalak • Freelance Web Designer &amp; Developer</p>
 				</div>
 		  	</div>
-		  	<div class="col-md-6">
-				<div class="d-flex align-items-center">
-					<div id="pph-hireme" class="mx-auto"></div>
-				</div>
-				<script type="text/javascript">
-					(function(d, s) {
-						var useSSL = 'https:' == document.location.protocol;
-						var js, where = d.getElementsByTagName(s)[0],
-							js = d.createElement(s);
-						js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1377666131/2387822.js?width=300&height=135&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
-						try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-					}(document, 'script'));
-				</script>
-				</script>
+
 		  	</div>
 		  </div>
 	  </footer>
@@ -201,7 +301,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="./js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
