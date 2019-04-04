@@ -1,0 +1,11 @@
+{
+  "name": "michalakweb.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/michalakweb/michalakweb.github.io",
+  "author": "Mateusz Michalak <michalakweb@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

@@ -43,8 +43,8 @@
 		</header>
 
 		<main role="main">
-			<div class="jumbotron jumbotron-fluid bg-light">
-				<div class="container-fluid">
+			<div class="jumbotron jumbotron bg-light">
+				<div class="container-fluid text-center">
 					<h1 class="display-4">My Front End Web Development Setup</h1>
 					<p class="lead">An overview of all aspects of my web development workflow, from coding stack to frameworks, task runners, version control, etc.</p>
 				</div>
@@ -55,7 +55,7 @@
 				<div class="container bg-white rounded border border-primary">
 					<div class="row mx-2">
 						<div class="col-4-sm mb-3">
-							<h3 class="my-4">Stack - <strong>MAMP</strong> and <strong>Local</strong></h3>
+							<h3 class="my-4">Local development - <strong>MAMP</strong> and <strong>Local</strong></h3>
 							<img src="/img/mamp.png" alt="Mamp" class="mx-3">
 							<img src="/img/localfly.png" alt="Local" class="mx-4">
 						</div>
@@ -75,7 +75,8 @@
 						</div>
 						<div class="col-8-sm">
 							<p>
-								I started out with Brackets, as it seemed to be easy to setup and use, but currently I am migrating to Visual Studio Code. VSC seems to be the bigger &amp; and better deal in the long run.
+								I started out with Brackets, as it seemed to be easy to setup and use. Once I started learning React
+								it made MUCH more sense to have something like VSC and that's what I'm sticking with currently.
 							</p>
 						</div>
 					</div>
@@ -88,9 +89,28 @@
 						</div>
 						<div class="col-8-sm">
 							<p>
-								Webpack for bundling my JS modules and Gulp to automatically watch for changes in my /src Sass directory, and output the minified, prefixed, compiled CSS, along with Sourcemaps. 
+								Webpack is now my main module bundler.
+								I use Gulp only in small and simple projects to automatically compile my CSS.
 							</p>
 						</div>
+					</div>
+
+					<div class="row mx-2">
+							<div class="col-4-sm mb-3">
+								<h3 class="my-4">SPA Development - <strong>React</strong>, <strong>Redux</strong>, 
+									<strong>React-Router</strong> and <strong>Firebase</strong>
+								</h3>
+								<img src="/img/react.png" alt="git" class="mx-3">
+								<img src="/img/reactrouter.png" alt="git" class="mx-3">
+								<img src="/img/redux.png" alt="git" class="mx-3">
+								<img src="/img/firebase.png" alt="git" class="mx-3">
+							</div>
+							<div class="col-8-sm">
+								<p>
+									I'm currently exploring React heavily, along with other tools mentioned here. 
+									I find Redux to be the hardest one in terms of implementation.   
+								</p>
+							</div>
 					</div>
 					
 					<div class="row mx-2">
@@ -101,7 +121,8 @@
 						</div>
 						<div class="col-8-sm">
 							<p>
-								Git is an absolutely fantastic tool and it really improves my workflow. I also use GitHub as a place to store my repositories and as a web development portfolio and resume.
+								Git is an absolutely fantastic tool and it really improves my workflow. 
+								I also use GitHub as a place to store my repositories and as a web development portfolio and resume.
 							</p>
 						</div>
 					</div>
@@ -113,7 +134,8 @@
 						</div>
 						<div class="col-8-sm">
 							<p>
-								I like having the ability to define variables, nest, create loops, and especially organize my project into multiple files, all of which and more I can do with Sass.
+								I like having the ability to define variables, nest and especially organize my project 
+								into multiple files, all of which and more I can do with Sass. 
 							</p>
 						</div>
 					</div>
@@ -125,7 +147,9 @@
 						</div>
 						<div class="col-8-sm">
 							<p>
-								The first responsive designs I made were without any frameworks, because I wanted to understand the underlying concepts of grids, media queries, viewports, and so on. After that, I realized that the only way to avoid re-writing a lot of the same code, is to use a framework. I chose Bootstrap, because it is well documented.
+								The first responsive designs I made were without any frameworks, because I wanted to understand the underlying 
+								concepts of grids, media queries, viewports, and so on. After that, I realized that the only way to 
+								avoid re-writing a lot of the same code, is to use a framework. I chose Bootstrap, because it is well documented.
 							</p>
 						</div>
 					</div>
@@ -137,7 +161,8 @@
 						</div>
 						<div class="col-8-sm">
 							<p>
-								Currently, I use WordPress for professional projects. WordPress is extremely popular and extendable, I like how powerful it is and how many purposes it can serve.
+								Currently, I use WordPress for professional projects. WordPress is extremely popular and extendable, 
+								I like how powerful it is and how many purposes it can serve. On the downside I know how bloated and slow it gets in time.
 							</p>
 						</div>
 					</div>
@@ -150,15 +175,34 @@
 		</main>
 
 		<footer id="contact" class="text-muted">
-			<div class="container">
-				<h4>Contact details:</h4>
-				<br>
-				<p>Github: <a href="https://github.com/michalakweb">michalakweb</a></p>
-				<p>Email: michalakweb@gmail.com</p>
-				<p>Telephone: +84 868 41 51 32</p>
-				<p>Skype: mateusz.piotr.michalak</p>
-				<br>
-				<p>Copyright © 2018 Mateusz Michalak • Freelance Web Designer &amp; Developer</p>
+			<div class="row mx-0">
+				<div class="col-md-6 mb-4">
+					<div class="container">
+						<h4>Contact details:</h4>
+						<br>
+						<p>Github: <a href="https://github.com/michalakweb">michalakweb</a></p>
+						<p>Email: michalakweb@gmail.com</p>
+						<p>Telephone: +84 868 41 51 32</p>
+						<p>Skype: mateusz.piotr.michalak</p>
+						<br>
+						<p>Copyright © 2018 Mateusz Michalak • Freelance Web Designer &amp; Developer</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="d-flex align-items-center">
+						<div id="pph-hireme" class="mx-auto"></div>
+					</div>
+					<script type="text/javascript">
+						(function(d, s) {
+							var useSSL = 'https:' == document.location.protocol;
+							var js, where = d.getElementsByTagName(s)[0],
+								js = d.createElement(s);
+							js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1377666131/2387822.js?width=300&height=135&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+							try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+						}(document, 'script'));
+					</script>
+					</script>
+			</div>
 			</div>
 		</footer>
 
@@ -167,8 +211,6 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-		<script src="./js/vendor/popper.min.js"></script>
 		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/vendor/holder.min.js"></script>
 	</body>
 </html>
