@@ -8,7 +8,7 @@ body {
 }
 
 #logo {
-	font-family: 'Pacifico', cursive;
+	font-family: "Pacifico", cursive;
 }
 
 .nav-link-active:hover {
@@ -19,7 +19,7 @@ body {
 	background-image: url(../img/background.jpeg);
 }
 
-#stack img{
+#stack img {
 	max-width: 64px;
 }
 
@@ -33,8 +33,13 @@ iframe {
 	height: 125px;
 }
 
+#avatar {
+	width: 200px;
+	border-radius: 100px;
+}
+
 @media only screen and (min-width: 1400px) {
 	body {
-	  border: 1px solid rgba(56, 56, 56, 0.815);
+		border: 1px solid rgba(56, 56, 56, 0.815);
 	}
-  }
+}

@@ -25,7 +25,7 @@
 			<div class="collapse navbar-collapse w-100 order-1 order-lg-0" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href="stack.html">My Front-End Setup</a>
+						<a class="nav-link" href="stack.html">My Stack</a>
 					</li>
 				</ul>
 			</div>
@@ -46,18 +46,11 @@
 
       <section id="welcome" class="jumbotron text-center py-5">
         <div class="container">
-          <h1 class="jumbotron-heading">Hi, I'm Matt. I design and build websites.</h1>
-					<p class="lead font-weight-light mt-5">Freelance Web Designer &amp; Developer. 
-							Experienced in designing and developing custom Wordpress websites. 
-							Currently looking for a full-time job in Berlin.
-					</p>
+					<img id="avatar" src="/img/avatar.png" alt="avatar" class="m-4">
+          <h1 class="jumbotron-heading mb-4">Hi, I'm Matt. I design and develop web apps.</h1>
           <p>
             <a href="#contact" class="btn btn-outline-primary my-2">Contact me</a>
             <a href="#projects" class="btn btn-outline-secondary my-2">Projects</a>
-            <a href="#reactProjects" class="btn btn-outline-info my-2">
-							<i class="fab fa-react fa-spin"></i>
-							Projects
-						</a>
             <a href="https://www.github.com/michalakweb" class="btn btn-outline-dark my-2" target="_blank">
 							<i class="fab fa-github"></i>
 							GitHub
@@ -66,7 +59,7 @@
         </div>
       </section>
       
-	  <section class="fdb-block fp-active pt-2" data-block-type="features" data-id="1" draggable="true">
+	  <section class="fdb-block fp-active pt-2 pb-4" data-block-type="features" data-id="1" draggable="true">
 			<div class="container mb-5">
 				<div class="row text-center">
 					<div class="col-12">
@@ -97,7 +90,7 @@
 			<!-- Video section -->
 			<div class="container">
 					<div class="row text-center">
-						<div class="col-md-6 mb-5">
+						<div class="col-md-12 mb-2">
 							<h2 class="display-4">Video-CV</h2>
 							<div class="row text-center justify-content-center mt-5">
 									<iframe width="560" height="315" src="https://www.youtube.com/embed/kSYSw6h1WEA" 
@@ -105,44 +98,61 @@
 									allowfullscreen></iframe>
 							</div>
 						</div>
-						<div class="col-md-6">
-								<h2 class="display-4">Find me on PPH</h2>
-									<!--
-											PeoplePerHour Profile Widget
-											The div#pph-hire me is the element
-											where the iframe will be inserted.
-											You may move this element wherever
-											you need to display the widget
-									-->
-									<div id="pph-hireme" class="mt-5"></div>
-									<script type="text/javascript">
-									(function(d, s) {
-											var useSSL = 'https:' == document.location.protocol;
-											var js, where = d.getElementsByTagName(s)[0],
-											js = d.createElement(s);
-											js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1377666131/2387822.js?width=300&height=255&orientation=vertical&theme=dark&hourlies=487184&rnd='+parseInt(Math.random()*10000, 10);
-											try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-									}(document, 'script'));
-									</script>
-							</div>
 					</div>
-	
-					
 				</div>
 		</section>
 
       <div id="projects" class="album py-1 bg-light">
         <div class="container">
-			<h1 class="jumbotron-heading mb-5 mt-3">My projects:</h1>
+				<h1 class="jumbotron-heading mb-5 mt-3">My projects:</h1>
 			
 			
 
 			<div class="row d-flex">
+				<div class="col-md-4">
+					<div class="card mb-4 shadow-sm">
+						<img class="card-img-top mx-auto" src="img/house.png" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-text mb-3">React card game in a socialist setting.</h4>
+							<p class="card-text">
+								A passion project in which I wanted to go through the steps of developing a video game, including design, ai opponent logic and even multiplayer!
+							</p>
+							
+							<a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapseExample">
+									Key Features
+							</a>
+							</p>
+							<div class="collapse" id="collapse4">
+								<div class="card card-body">
+										<ul class="list-group list-group-flush">  
+												<li class="list-group-item">React to handle logic and view</li>
+												<li class="list-group-item">Firebase to enable multiplayer mode</li>
+												<li class="list-group-item">all-device responsive</li>
+												<li class="list-group-item">installable PWA</li>	
+										</ul>
+								</div>
+							</div>
+							
+							<a href="https://thatsmyspot.herokuapp.com/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block mb-1">Link</a>
+							<a href="https://github.com/michalakweb/that-my-spot/" target="_blank"  class="btn btn-sm btn-outline-dark btn-block">
+								<i class="fab fa-github pr-2"></i>GitHub</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				
 			 <div class="col-md-4">
 				  <div class="card mb-4 shadow-sm">
-					  <img class="card-img-top" src="img/kurka.jpg" alt="Card image cap">
+					  <img class="card-img-top bg-dark" src="img/kurka.jpg" alt="Card image cap">
 					  <div class="card-body">
-						  <p class="card-text">A complete redesign of an old culinary blog. It has been migrated from the Blogger platform and successfully integrated with Wordpress.</p>
+							<h4 class="card-text mb-3">
+								Wordpress culinary blog. 
+							</h4>
+							<p class="card-text">A complete redesign of an old culinary blog. It has been migrated from the Blogger platform and successfully integrated with Wordpress.</p>
+							<p class="card-text">
+								My first big freelance project.
+							</p>
 							
 								<a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
 										Key Features
@@ -163,165 +173,8 @@
 					  </div>
 				  </div>
 			 </div>
-			<div class="col-md-4">
-				  <div class="card mb-4 shadow-sm">
-					  <img class="card-img-top" src="img/university.png" alt="Card image cap">
-					  <div class="card-body">
-						  <p class="card-text">A fictional university website and a proof of concept. Created with Wordpress, Webpack, jQuery and a few other technologies.  </p>
-							
-							<a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
-									Key Features
-							</a>
-							</p>
-							<div class="collapse" id="collapse2">
-								<div class="card card-body">
-										<ul class="list-group list-group-flush">  
-												<li class="list-group-item">live-search powered by REST</li>
-												<li class="list-group-item">simple CRUD operations provided for the registered user (eg. user private notes)</li>
-												<li class="list-group-item">related data to provide the best user experience (powered by Advanced Custom Fields</li>
-												<li class="list-group-item">modular CSS file structure thanks to Sass</li>
-												<li class="list-group-item">all-device responsive</li>
-										</ul>
-								</div>
-							</div>
-						  
-						  <a href="https://michalakweb.000webhostapp.com/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block">Link</a>
-					  </div>
-				  </div>
-			</div>
-			<div class="col-md-4">
-				  <div class="card mb-4 shadow-sm">
-					  <img class="card-img-top" src="img/pizzeria.png" alt="Card image cap">
-					  <div class="card-body">
-						  <p class="card-text">A restaurant website mock-up. Created with the Bootstrap framework. </p>
-						  
-						  <p><strong>Key features:</strong></p>
-						  <ul>  
-							  <li>easily editable thanks to Bootstrap building blocks</li>
-							  <li>all-device responsive</li>
-						  </ul>
-						  <a href="https://neotestingweb.neocities.org/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block">Link</a>
-					  </div>
-				  </div>
-			</div>
-            <div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
-					<img class="card-img-top" src="img/teacher.png" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">My first website, a landing page to promote my teaching services in Asia. 
-							Created with plain HTML and CSS.</p>
-						
-						<p><strong>Key features:</strong></p>
-						<ul>  
-							<li>designed with the "mobile first" principle in mind</li>
-						</ul>
-						<a href="https://enmatt.neocities.org/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block">Link</a>
-					</div>
-				</div>
-            </div>
-					</div>
 
-					<h1 id='reactProjects' class="jumbotron-heading mb-5 mt-3"><i class="fab fa-react"></i> Projects:</h1>
-					
-					<div class="row d-flex">
-							<div class="col-md-4">
-									<div class="card mb-4 shadow-sm">
-										<img class="card-img-top card-img--house mt-2 mx-auto" src="img/house.png" alt="Card image cap">
-										<div class="card-body">
-											<p class="card-text">Happy Tenants Progressive Web App</p>
-											<p class="card-text">Happy Tenants is an information tracker that has two features: adding items to a todo list,
-													viewing the current chores for the week.
-											</p>
-											
-											<a class="btn btn-outline-secondary" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapseExample">
-													Key Features
-											</a>
-											</p>
-											<div class="collapse" id="collapse4">
-												<div class="card card-body">
-														<ul class="list-group list-group-flush">  
-																<li class="list-group-item">React to show content</li>
-																<li class="list-group-item">ReactRouter for routing</li>
-																<li class="list-group-item">Redux for managing state</li>
-																<li class="list-group-item">TypeScript for static type checking</li>
-																<li class="list-group-item">Firebase to serve data among different users</li>
-																<li class="list-group-item">all-device responsive</li>
-																<li class="list-group-item">installable PWA</li>	
-														</ul>
-												</div>
-											</div>
-											
-											<a href="https://michalakweb.github.io/happytenants/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block mb-1">Link</a>
-											<a href="https://github.com/michalakweb/happytenants/" target="_blank"  class="btn btn-sm btn-outline-dark btn-block">
-												<i class="fab fa-github pr-2"></i>GitHub</a>
-										</div>
-									</div>
-							</div>
-
-							<div class="col-md-4">
-									<div class="card mb-4 shadow-sm">
-										<img src="img/beer.svg" 
-										alt="Smiley face" height="60" width="60" class='card-img-top card-img--house mt-2 mx-auto'> 
-										<div class="card-body">
-											<p class="card-text">Beer DB</p>
-											<p class="card-text">It's a "fetch data from external API" React project</p>
-											
-											<a class="btn btn-outline-secondary" data-toggle="collapse" href="#beerDB" role="button" aria-expanded="false" aria-controls="collapseExample">
-													Key Features
-											</a>
-											</p>
-											<div class="collapse" id="beerDB">
-												<div class="card card-body">
-														<ul class="list-group list-group-flush">  
-																<li class="list-group-item">React to show content</li>
-																<li class="list-group-item">ReactRouter for routing</li>
-																<li class="list-group-item">Tests through Jest</li>
-																<li class="list-group-item">all-device responsive</li>	
-														</ul>
-												</div>
-											</div>
-											
-											<a href="https://michalakweb.github.io/beersDB/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block mb-1">Link</a>
-											<a href="https://github.com/michalakweb/beersDB/" target="_blank"  class="btn btn-sm btn-outline-dark btn-block">
-												<i class="fab fa-github pr-2"></i>GitHub</a>
-										</div>
-									</div>
-							</div>
-
-							<div class="col-md-4">
-								 <div class="card mb-4 shadow-sm">
-									 <img class="card-img-top" src="img/wordpressReact.png" alt="Card image cap">
-									 <div class="card-body">
-										 <p class="card-text">
-											 React coding challenge #2  
-										 </p>
-										 <p class="card-text">
-												A simple React app that connects with the Wordpress REST API to fetch and display some posts.
-										 </p>
-										 
-										 <a href="https://michalakweb.github.io/WordpressReact/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block">Link</a>
-									 </div>
-								 </div>
-							</div>
-							<div class="col-md-4">
-									<div class="card mb-4 shadow-sm">
-										<img class="card-img-top" src="img/choiceSelector.png" alt="Card image cap">
-										<div class="card-body">
-											<p class="card-text">
-												React coding challenge #1  
-											</p>
-											<p class="card-text">
-												 The starting ground for all React beginners. A todo app.
-											</p>
-											
-											<a href="https://michalakweb.github.io/testapp/" target="_blank"  class="btn btn-sm btn-outline-primary btn-block">Link</a>
-										</div>
-									</div>
-							 </div>
-								
-								 </div>
-        </div>
-      </div>
+       </div>
 
     </main>
 
@@ -333,10 +186,9 @@
 					<br>
 					<p>Github: <a href="https://github.com/michalakweb">michalakweb</a></p>
 					<p>Email: michalakweb@gmail.com</p>
-					<p>Telephone: +48 576 215 542</p>
-					<p>Skype: mateusz.piotr.michalak</p>
+					<p>Mobile: +49 0151 462 869 63</p>
 					<br>
-					<p>Copyright © 2019 Mateusz Michalak • Freelance Web Designer &amp; Developer</p>
+					<p>Copyright © 2020 Mateusz Michalak • Web Designer &amp; Developer</p>
 				</div>
 		  	</div>
 
